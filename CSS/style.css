@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 23px;
+    font-family: 'Hahmlet', serif;
+    word-wrap: break-word;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+    background-color: rgb(166, 161, 168);
+    justify-content: right;
+    padding: 10px;
+    border:0.1px solid black;
+    border-bottom:3px double lightslategrey;
+    box-shadow:1px 5px 5px 1px rgb(166, 161, 168) ;
+}
+
+.col1{
+    flex:0 0 3vw;
+    
+}
+
+.col2{
+    flex: 1;
+}
+
+.col3{
+    flex:0 0 2vw;
+}
+
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: rgb(89, 11, 134) !important; /*here we add !important to tell the browser that no matter what i want this to work (y3ni maradix yklih ydir haja khra f3awto)*/
+
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    text-decoration: purple underline 2px wavy;
+    padding-top: 4vh;
+    padding-bottom: 40px;
+}
+
+.container{
+    display: inline-grid;
+    grid-template-columns: auto 1.3fr;
+    grid-template-areas: "container1 container2";
+    column-gap: 30px;
+}
+
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title{
+    background-color: rgb(220, 217, 223);
+    margin: 0;
+    padding: 10px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.addInput{
+    width: 100%;
+    border: rgb(89, 11, 134) double 1px;
+    padding: 10px;
+    display: none;
+}
+
+li{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom:10px;
+    border-bottom: rgb(89, 11, 134) double 1px;
+}
+
+.check, .impo{
+   position: relative;
+   width: 20%;
+}
+
+.emptycheck, .notempty, .importantEmpty, .important{
+    position: absolute;
+}
+.emptycheck2, .notempty2, .importantEmpty2, .important2{
+    position: absolute;
+}
+
+.emptycheck3, .notempty3, .importantEmpty3, .important3{
+    position: absolute;
+}
+
+.notempty, .notempty2, .notempty3{
+    display: none;
+    
+}
+
+.important, .important2, .important3{
+    display: none;
+}
+
+
+.todo, .todo2, .todo3{
+    width: 60%;
+}
